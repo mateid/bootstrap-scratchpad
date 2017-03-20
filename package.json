@@ -1,0 +1,10 @@
+{
+  "name": "bootstrap-scratchpad",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-rimraf": "^0.2.1"
+  }
+}
