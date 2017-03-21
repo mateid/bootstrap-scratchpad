@@ -5,7 +5,7 @@ var clean = require('gulp-rimraf');
 gulp.task('default', ['copy', 'less']);
 
 gulp.task('less', function () {
-  return gulp.src('./less/**/*.less')
+  return gulp.src('./less/**/theme.less')
       .pipe(less())
       .pipe(gulp.dest('./dist/css'));
 });
@@ -16,5 +16,5 @@ gulp.task('copy', function() {
 });
 
 gulp.task('clean', [], function() {
-  return gulp.src("dist/*", { read: false }).pipe(clean());
+  return gulp.src("dist/**/*", { read: false }).pipe(clean());
 });
