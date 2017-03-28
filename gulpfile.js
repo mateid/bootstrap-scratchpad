@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     minify = require('gulp-minify-css')
     rename = require('gulp-rename')
-    clean = require('gulp-rimraf');
+    rimraf = require('gulp-rimraf');
 
 gulp.task('default', ['clean', 'copy', 'less']);
 
@@ -21,5 +21,5 @@ gulp.task('copy', function () {
 
 gulp.task('clean', [], function () {
   return gulp.src("dist/**/*", { read: false })
-    .pipe(clean());
+    .pipe(rimraf());
 });
